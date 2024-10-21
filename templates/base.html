@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        {% block head %}
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+        <title>{% block title %}{% endblock %} - My Cool Application</title>
+        <div class="topnav", id="topnavbar">
+            <a href="http://127.0.0.1:5000/">Home</a>
+            <a href="http://127.0.0.1:5000/register">Register</a>
+            <a href="http://127.0.0.1:5000/login">Login</a>
+        </div>
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        <h1>This is on base.html</h1>
+        {% endblock %}
+    </body>
+</html>
